@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Academic Block 1",
+        "category": "Blocks",
+        "id": 0,
+        "description": "This is academic block 1 of chandigarh university",
+        "coordinates": {
+            "longitude": 30.769803,
+            "latitude": 76.575742
+        },
+        "imageName": "block1"
+    },
+    {
+        "name": "Academic Block 7",
+        "category": "Blocks",
+        "id": 1,
+        "description": "This is academic block 7 of chandigarh university",
+        "coordinates": {
+            "longitude": 30.769042,
+            "latitude": 76.578360
+        },
+        "imageName": "block7"
+    },
+    {
+        "name": "AIT Block 12",
+        "category": "Blocks",
+        "id": 2,
+        "description": "This is academic block 12 of chandigarh university which is located in Gharuan, Punjab",
+        "coordinates": {
+            "longitude": 30.770704,
+            "latitude": 76.570894
+        },
+        "imageName": "block12"
+    },
+    {
+        "name": "Cafeteria",
+        "category": "Others",
+        "id": 3,
+        "description": "Cafeteria situated in block 2",
+        "coordinates": {
+            "longitude": 30.769204,
+            "latitude": 76.576233
+        },
+        "imageName": "cafeteria"
+    },
+    {
+        "name": "Gate 1",
+        "category": "Others",
+        "id": 4,
+        "description": "Main gate of Chandigarh University",
+        "coordinates": {
+            "longitude": 30.770722,
+            "latitude": 76.576311
+        },
+        "imageName": "gate1"
+    }
+]
