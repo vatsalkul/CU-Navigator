@@ -21,12 +21,13 @@ struct PlacesRow: View {
                 
                     HStack(alignment: .top) {
                         ForEach(self.places, id: \.name){ place in
-                        
+                         NavigationLink(destination: DetailView(places: place)){
                                 PlaceView(places: place)
                                 .frame(width: 300)
                                 .padding(.trailing, 30)
                             
  
+                            }
                     }
                         }
 
