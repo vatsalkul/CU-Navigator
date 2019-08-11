@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,9 +19,12 @@
 		46661EF122FB3B210068E6B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46661EF022FB3B210068E6B4 /* Assets.xcassets */; };
 		46661EF422FB3B210068E6B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46661EF322FB3B210068E6B4 /* Preview Assets.xcassets */; };
 		46661EF722FB3B210068E6B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46661EF522FB3B210068E6B4 /* LaunchScreen.storyboard */; };
+		46F36AE32300470A004FAC11 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 46F36AE22300470A004FAC11 /* Podfile */; };
+		53AE54195F44E59C74020A19 /* libPods-CU Navigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 799BC39E5F04BA6316CEF52D /* libPods-CU Navigator.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0970B4179672B7863B559779 /* Pods-CU Navigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CU Navigator.release.xcconfig"; path = "Target Support Files/Pods-CU Navigator/Pods-CU Navigator.release.xcconfig"; sourceTree = "<group>"; };
 		464507A622FDACB800F0B83E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		464507A922FDACEC00F0B83E /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
 		464507AB22FDAEF500F0B83E /* cuData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cuData.json; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		46661EF322FB3B210068E6B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		46661EF622FB3B210068E6B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46661EF822FB3B210068E6B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46F36AE22300470A004FAC11 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		799BC39E5F04BA6316CEF52D /* libPods-CU Navigator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CU Navigator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC496675B9A8AB92D2B31ABA /* Pods-CU Navigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CU Navigator.debug.xcconfig"; path = "Target Support Files/Pods-CU Navigator/Pods-CU Navigator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AE54195F44E59C74020A19 /* libPods-CU Navigator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +59,11 @@
 		46661EDE22FB3B1A0068E6B4 = {
 			isa = PBXGroup;
 			children = (
+				46F36AE22300470A004FAC11 /* Podfile */,
 				46661EE922FB3B1B0068E6B4 /* CU Navigator */,
 				46661EE822FB3B1B0068E6B4 /* Products */,
+				F47223F2B79B2F38AF58A538 /* Pods */,
+				B038AADA292BBEA4E8499658 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +103,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B038AADA292BBEA4E8499658 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				799BC39E5F04BA6316CEF52D /* libPods-CU Navigator.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F47223F2B79B2F38AF58A538 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC496675B9A8AB92D2B31ABA /* Pods-CU Navigator.debug.xcconfig */,
+				0970B4179672B7863B559779 /* Pods-CU Navigator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46661EFB22FB3B210068E6B4 /* Build configuration list for PBXNativeTarget "CU Navigator" */;
 			buildPhases = (
+				23AC2AF8273E051A859E42FB /* [CP] Check Pods Manifest.lock */,
 				46661EE322FB3B1B0068E6B4 /* Sources */,
 				46661EE422FB3B1B0068E6B4 /* Frameworks */,
 				46661EE522FB3B1B0068E6B4 /* Resources */,
+				4F9BE9BF5017653F6EE31C3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F36AE32300470A004FAC11 /* Podfile in Resources */,
 				46661EF722FB3B210068E6B4 /* LaunchScreen.storyboard in Resources */,
 				464507AC22FDAEF500F0B83E /* cuData.json in Resources */,
 				46661EF422FB3B210068E6B4 /* Preview Assets.xcassets in Resources */,
@@ -159,6 +189,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23AC2AF8273E051A859E42FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CU Navigator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F9BE9BF5017653F6EE31C3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CU Navigator/Pods-CU Navigator-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CU Navigator/Pods-CU Navigator-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CU Navigator/Pods-CU Navigator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46661EE322FB3B1B0068E6B4 /* Sources */ = {
@@ -306,6 +378,7 @@
 		};
 		46661EFC22FB3B210068E6B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC496675B9A8AB92D2B31ABA /* Pods-CU Navigator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,6 +386,7 @@
 				DEVELOPMENT_TEAM = RG8WZR6JK3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "CU Navigator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +400,7 @@
 		};
 		46661EFD22FB3B210068E6B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0970B4179672B7863B559779 /* Pods-CU Navigator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -333,6 +408,7 @@
 				DEVELOPMENT_TEAM = RG8WZR6JK3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "CU Navigator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
