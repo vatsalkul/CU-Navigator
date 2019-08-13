@@ -25,11 +25,11 @@ struct PlaceView: View {
             VStack(alignment: .leading, spacing: 5){
                 Text(places.name)
                     .font(.headline)
-                    .colorMultiply(.primary)
+                    .foregroundColor(.primary)
                     
                 Text(places.description)
                     .font(.subheadline)
-                    .colorMultiply(.secondary)
+                    .foregroundColor(.secondary)
                     .multilineTextAlignment(.leading)
                     .lineLimit(2)
                     .frame(height: 40)
