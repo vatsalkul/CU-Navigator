@@ -44,24 +44,29 @@ struct DetailView: View {
                 
                 HStack{
                     Spacer()
-                    NavigateButton()
+                    Button(action: {
+                        let zoom = 15
+                        let trafficMode = "transit"
+                        guard let url = URL(string: "comgooglemaps://?center=\(self.places.coordinates.longitude),\(self.places.coordinates.latitude)&q=\(self.places.coordinates.longitude),\(self.places.coordinates.latitude)&zoom=\(zoom)&views=\(trafficMode)") else { return }
+                        if #available(iOS 10.0, *) {
+                            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                        } else {
+                            UIApplication.shared.openURL(url)
+                        }
+                        
+                    }){
+                        Text("Navigate")
+                            .frame(width: 200, height: 50)
+                            .foregroundColor(.white)
+                            .background(Color.blue)
+                            .font(.headline)
+                        .cornerRadius(10)
+                    }
                     Spacer()
                     
                 }.padding(.top, 50)
             }.padding(.top)
         }.edgesIgnoringSafeArea(.top)
-    }
-}
-struct NavigateButton: View {
-    var body: some View{
-        Button(action: {}){
-            Text("Navigate")
-                .frame(width: 200, height: 50)
-                .foregroundColor(.white)
-                .background(Color.blue)
-                .font(.headline)
-            .cornerRadius(10)
-        }
     }
 }
 #if DEBUG
