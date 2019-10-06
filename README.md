@@ -6,8 +6,8 @@ Chandigarh University guide  to different food outlets and academic blocks.
 <img src="https://user-images.githubusercontent.com/30840527/62794055-be5a0a00-baf0-11e9-8a29-182ff2f69595.png" width="250">
 
 ## Features
-- Student/Parents can navigate through different areas within Chandigarh University. 
-- This app will also provide information about different outlets and academic blocks.
+- This application allows the students as well as parents to navigate through different areas within Chandigarh University. 
+- This application will provide information to user about all the outlets and paths to academic blocks and hostels.
 
 ## How to use
 Just download source code and open project in Xcode 11 or higher.
