@@ -3,7 +3,7 @@
         "name": "Academic Block 1",
         "category": "Blocks",
         "id": 0,
-        "description": "This is academic block 1 of chandigarh university",
+        "description": "This is academic block 1 of chandigarh university. Department of Computer Science as well as Pro VC office, server room and ERP department are located here ",
         "coordinates": {
             "longitude": 30.769803,
             "latitude": 76.575742
@@ -14,7 +14,7 @@
         "name": "Academic Block 7",
         "category": "Blocks",
         "id": 1,
-        "description": "This is academic block 7 of chandigarh university",
+        "description": "This is academic block 7 of chandigarh university.",
         "coordinates": {
             "longitude": 30.769042,
             "latitude": 76.578360
@@ -25,7 +25,7 @@
         "name": "AIT Block 12",
         "category": "Blocks",
         "id": 2,
-        "description": "This is academic block 12 of chandigarh university which is located in Gharuan, Punjab",
+        "description": "This is academic block 12 of chandigarh university which is located Chanayak campus",
         "coordinates": {
             "longitude": 30.770704,
             "latitude": 76.570894
