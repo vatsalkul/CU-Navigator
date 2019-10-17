@@ -16,7 +16,7 @@ struct PlacesRow: View {
             
             Text(self.category)
             .font(.headline)
-            
+                .padding(10)
                 ScrollView(.horizontal, showsIndicators: false){
                 
                     HStack(alignment: .top) {
@@ -24,7 +24,7 @@ struct PlacesRow: View {
                          NavigationLink(destination: DetailView(places: place)){
                                 PlaceView(places: place)
                                 .frame(width: 300)
-                                .padding(.trailing, 30)
+                                .padding(.leading, 20)
                             
  
                             }
