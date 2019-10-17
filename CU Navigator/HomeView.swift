@@ -18,14 +18,18 @@ struct HomeView: View {
     var body: some View {
         
         NavigationView{
-            List(categories.keys.sorted(), id: \String.self){ key in
+            ScrollView {
                 
+                ForEach(categories.keys.sorted(), id: \String.self) {
+                    key in
+                    
+                    PlacesRow(category: "\(key)".uppercased(), places: self.categories[key]!)
+                                       .frame(height: 300)
+                                       .padding(.top)
+                                       .padding(.bottom)
+                }
                
-                PlacesRow(category: "\(key)".uppercased(), places: self.categories[key]!)
-                    .frame(height: 300)
-                    .padding(.top)
-                    .padding(.bottom)
-            }
+            }.edgesIgnoringSafeArea(.leading)
             .navigationBarTitle(Text("Chandigarh University"))
         }
     }
