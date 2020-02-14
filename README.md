@@ -1,9 +1,10 @@
 # Navigator iOS App
 Chandigarh University guide  to different food outlets and academic blocks.
 
-## Screenshots:
 
-<img src="https://user-images.githubusercontent.com/30840527/62794055-be5a0a00-baf0-11e9-8a29-182ff2f69595.png" width="250">
+![Copy of Vatsal Kulshreshtha](https://user-images.githubusercontent.com/30840527/74566501-9d8bd900-4f99-11ea-8be5-43093f298a1b.jpg)
+
+![Copy of Copy of Untitled](https://user-images.githubusercontent.com/30840527/74566514-a2e92380-4f99-11ea-968c-84c2a2b9e2c4.jpg)
 
 ## Features
 - This application allows the students as well as parents to navigate through different areas within Chandigarh University. 
